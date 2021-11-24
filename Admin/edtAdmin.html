@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../css/admin/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../css/admin/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../css/admin/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    
+    <!-- Custom Theme Style -->
+    <link href="../css/admin/build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div  class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="../index.html" class="site_title"><i class="fa fa-paw"></i> <span> Admin</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/perfil.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <?php
+                  include('../php/listar - admin.php');
+
+                  mostrarUsuario();
+                ?>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Admin <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="CadastrarAdmin.html">Cadastrar Admin</a></li>
+                      <li><a href="EditarAdmin.html">Editar Admin</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Editor <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="CadastrarEditor.html"> Cadastrar editor</a></li>
+                      <li><a href="EditarEditor.html"> Editar Editor</a></li> 
+                    </ul>
+                  </li>
+                 </ul> 
+              </div>
+              
+              </div>
+
+            </div>
+            
+          </div>
+       
+
+        <!-- Sobre o Admins -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/perfil.jpg" alt="">Hércules
+                  </a> 
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+                      <div class="profile_img">
+                        <div id="crop-avatar">
+                          <!-- Current avatar -->
+                          <img class="img-responsive avatar-view" width="120" src="images/perfil.jpg" alt="Avatar" title="Change the avatar">
+                        </div>
+                      </div>
+                      <h3>Hércules</h3>
+
+                      <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Alterar Perfil</a>
+                      <br />
+
+                      <!-- start skills -->
+                      
+                      <!-- end of skills -->
+
+                    </div>
+
+                    
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+
+                      <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" >
+                       
+                       <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12"> Nome:
+                          <input placeholder="Hércules Camara" type="text" id="nome" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                        <div class="form-group">
+                        
+                        <div class="col-md-6 col-sm-6 col-xs-12"> Email:
+                          <input placeholder="Hércules@gmail.com" type="text" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                      
+                      <div class="form-group">  
+                        <div class="col-md-6 col-sm-6 col-xs-12"> Telefone:
+                          <input placeholder="(66)12345678" id="Telefone" class="form-control"  data-inputmask="'mask' : '(99) 999-9999'" class="form-control col-md-7 col-xs-12" type="text" name="Telefone">
+                        </div>
+                      </div>
+
+                      <div class="form-group">  
+                        <div class="col-md-6 col-sm-6 col-xs-12"> Data de Nascimento:
+                          <input placeholder="09/12/2001" id="dataNascimento" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                        </div>
+                      </div>
+
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="button">Cancelar</button>
+                          </q> <button class="btn btn-primary" type="reset">Resetar</button>
+                          <button type="submit" class="btn btn-success">Submeter</button>
+                      </div>
+                     </div>
+                     </div> 
+                    </form>
+
+                  </div>
+                   
+                    <!--  <table width="45%" colspan="10" >
+                        <tr>
+                          <td><label> Nome: <input type="text" placeholder="Hércules Camara" name="Hercules Camara"></label></td>
+                          <td><label> Email: <input type="text" placeholder="Herculescamara@gmail.com" name="Herculescamara@gmail.com"></label></td>
+                        </tr>
+                        <tr>
+                          <td><label> Telefone: <input type="text" placeholder="Hércules Camara" name="Hercules Camara"></label></td>
+                          <td><label> Data de nascimento: <input  type="date" placeholder="Herculescamara@gmail.com" name="Herculescamara@gmail.com"></label></td>
+                        </tr>
+                      </table>
+                      
+                    -->
+
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+          <div class="pull-right">
+            Loading The game <a href="https://colorlib.com"></a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /page content -->
+
+        <!-- footer content -->
+      
+   
+    <!-- jQuery -->
+    <script src="../css/admin/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../css/admin/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../css/admin/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../css/admin/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../css/admin/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../css/admin/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="../css/admin/vendors/Flot/jquery.flot.js"></script>
+    <script src="../css/admin/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../css/admin/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../css/admin/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../css/admin/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../css/admin/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../css/admin/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../css/admin/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../css/admin/vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../css/admin/vendors/moment/min/moment.min.js"></script>
+    <script src="../css/admin/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="../css/admin/build/js/custom.min.js"></script>
+  </body>
+</html>

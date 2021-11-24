@@ -1,0 +1,256 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>Admin</title>
+		<!-- Bootstrap core CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href="../css/jquery.bxslider.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="../css/PagAdmin.css" rel="stylesheet">
+		
+
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../games/games.html">Games</a></li>
+						<li><a href="../noticias/noticias.html">Notícias</a></li>
+						<li><a href="../campeonatos/campeonatos.html">Campeonatos</a></li>
+						<li><a href="../times/times.html">Times</a></li>
+						<li><a href="../players/players.html">Players</a></li>
+						<li><a href="../sobre.html">Sobre</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://www.facebook.com/Loading-The-Game-OFC-359922761397508/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://mobile.twitter.com/LoadingOfc" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/loadingthegame/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<div >
+		<header>
+			
+			<!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Hercules <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">é um baitola...</a></li>
+                      <li><a href="index2.html"></a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="general_elements.html">General Elements</a></li>
+                      <li><a href="media_gallery.html">Media Gallery</a></li>
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="icons.html">Icons</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="widgets.html">Widgets</a></li>
+                      <li><a href="invoice.html">Invoice</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Chart JS</a></li>
+                      <li><a href="chartjs2.html">Chart JS2</a></li>
+                      <li><a href="morisjs.html">Moris JS</a></li>
+                      <li><a href="echarts.html">ECharts</a></li>
+                      <li><a href="other_charts.html">Other Charts</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+                      <li><a href="fixed_footer.html">Fixed Footer</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Live On</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="e_commerce.html">E-commerce</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="project_detail.html">Project Detail</a></li>
+                      <li><a href="contacts.html">Contacts</a></li>
+                      <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="page_403.html">403 Error</a></li>
+                      <li><a href="page_404.html">404 Error</a></li>
+                      <li><a href="page_500.html">500 Error</a></li>
+                      <li><a href="plain_page.html">Plain Page</a></li>
+                      <li><a href="login.html">Login Page</a></li>
+                      <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="#level1_1">Level One</a>
+                        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="level2.html">Level Two</a>
+                            </li>
+                            <li><a href="#level2_1">Level Two</a>
+                            </li>
+                            <li><a href="#level2_2">Level Two</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="#level1_2">Level One</a>
+                        </li>
+                    </ul>
+                  </li>                  
+                  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+
+
+		</header>
+		<!--<section>
+			<div class="row">
+				<div class="col-md-12">
+					<article class="blog-post">
+
+
+						<table class="tabela" border="1" >
+							<tr>
+								<td><img class="ImgPerfil" src="../images/PagAdmin/perfil.png"></td>
+								<td class="NomeAdmin" class="blog-post">Nome do Admin</td>
+							</tr>
+
+							<tr >
+								<td></td>
+								<td width="100" class="nav navbar-nav" align="left"><a href="">Sobre:</a></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td width="100" class="nav navbar-nav" align=""><a href="">Cadastrar Editor:</a></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td width="100" class="nav navbar-nav" align="left"><a>Cadastrar Admin:</a></td>
+							</tr>
+
+						</table>
+
+						
+						<!--<div class="Admin">
+							<div class="DivPerfil" class="blog-post-body-1">
+							<img class="ImgPerfil" src="../images/PagAdmin/perfil.png">
+						</div>
+
+							<div class="NomeAdmin" class="blog-post">
+								<h2>Nome do Admin</h2>
+							</div>
+
+						</div>
+						
+						<div class="acoesAdmin">
+
+							<div class="sobreAdmin" class="blog-post">
+								<h2>sobre:</h2>
+							</div>
+
+							<div class="cadastraAdmin" class="blog-post">
+								<h2>Cadastrar editor:</h2>
+							</div>
+
+							<div class="cadastrarEditor" class="blog-post">
+								<h2>Cadastrar Admin:</h2>
+							</div>
+
+						</div>
+
+						</div>
+
+							<div class="blog-post-text">
+						</div>
+
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		</div><!-- /.container -->
+
+		<footer class="footer">
+
+			<div class="footer-socials">
+				<a href="https://www.facebook.com/Loading-The-Game-OFC-359922761397508/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://mobile.twitter.com/LoadingOfc" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/loadingthegame/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+
+			<div class="footer-bottom">
+				<i class="fa fa-copyright"></i> Copyright 2019. All rights reserved.<br> by <a href="">LTG</a>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script src="js/mooz.scripts.min.js"></script>
+	</body>
+</html>
