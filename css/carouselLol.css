@@ -1,0 +1,232 @@
+html, body, main {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+#carouselLol {
+  position: relative;
+  height: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carouselLol div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carouselLol div img {
+  width: 200px;
+  transition: width 1s;
+}
+#carouselLol div.hideLeftLol {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carouselLol div.hideLeftLol img {
+  width: 100px;
+}
+#carouselLol div.hideRightLol {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carouselLol div.hideRightLol img {
+  width: 100px;
+}
+#carouselLol div.prevLol {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carouselLol div.prevLol img {
+  width: 100px;
+}
+#carouselLol div.prevLeftSecondLol {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carouselLol div.prevLeftSecondLol img {
+  width: 100px;
+}
+#carouselLol div.selectedLol {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carouselLol div.nextLol {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carouselLol div.nextLol img {
+  width: 100px;
+}
+#carouselLol div.nextRightSecondLol {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carouselLol div.nextRightSecondLol img {
+  width: 100px;
+}
+
+.buttonsLol1 {
+  position: relative;
+  background-color: transparent;
+  color: #000000;
+  border-color: transparent;
+  left: 6.5%;
+  transform: translateX(-8%);
+  bottom: 240px;
+}
+.buttonsLol1:hover {
+  position: relative;
+  background-color: #000000;
+  border-color: #333333;
+  color: #ffffff;
+  left: 6.5%;
+  transform: translateX(-8%);
+  bottom: 240px;
+}
+
+.buttonsLol2 {
+  position: relative;
+  background-color: transparent;
+  color: #000000;
+  border-color: transparent;
+  left: 90.5%;
+  transform: translateX(-90.5%);
+  bottom: 230px;
+}
+.buttonsLol2:hover {
+  position: relative;
+  background-color: #000000;
+  border-color: #333333;
+  color: #ffffff;
+  left: 90.5%;
+  transform: translateX(-90.5%);
+  bottom: 230px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+#carouselLol {
+  position: relative;
+  height: 100px;
+  top: 30%;
+  transform: translateY(-30%);
+  overflow: hidden;
+}
+#carouselLol div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carouselLol div img {
+  width: 100px;
+  transition: width 1s;
+}
+#carouselLol div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carouselLol div.hideLeft img {
+  width: 75px;
+}
+#carouselLol div.hideRight {
+  left: 50%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carouselLol div.hideRight img {
+  width: 75px;
+}
+#carouselLol div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(16px) translateX(-30%);
+}
+#carouselLol div.prev img {
+  width: 75px;
+}
+#carouselLol div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-1%);
+  opacity: 0.7;
+}
+#carouselLol div.prevLeftSecond img {
+  width: 50px;
+}
+#carouselLol div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(-2px) translateX(-38.5%);
+}
+#carouselLol div.next {
+  text-align: center;
+  z-index: 5;
+  left: 70%;
+  transform: translateY(16px) translateX(-40%);
+  height: 20vh;
+}
+#carouselLol div.next img {
+  text-align: center;
+  width: 75px;
+}
+#carouselLol div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carouselLol div.nextRightSecond img {
+  width: 50px;
+}
+
+.buttonsLol1 {
+  position: relative;
+  background-color: transparent;
+  color: #000000;
+  border-color: transparent;
+  left: 7%;
+  transform: translateX(-8%);
+  bottom: 100px;
+}
+.buttonsLol1:hover {
+  position: relative;
+  background-color: #000000;
+  border-color: #333333;
+  color: #ffffff;
+  left: 7%;
+  transform: translateX(-8%);
+  bottom: 100px;
+}
+
+.buttonsLol2 {
+  position: relative;
+  background-color: transparent;
+  color: #000000;
+  border-color: transparent;
+  left: 90.5%;
+  transform: translateX(-90.5%);
+  bottom: 100px;
+}
+.buttonsLol2:hover {
+  position: relative;
+  background-color: #000000;
+  border-color: #333333;
+  color: #ffffff;
+  left: 90.5%;
+  transform: translateX(-90.5%);
+  bottom: 100px;
+}
+}
